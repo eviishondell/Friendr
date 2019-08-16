@@ -151,6 +151,9 @@ span.psw {
       <label for="psw-repeat"><b>Repeat Password</b></label>
       <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
+      <label for="age"><b>Age</b></label>
+      <input type="age" placeholder="Age" name="age" required>
+
       <div class="clearfix">
         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"type="submit" class="signupbtn" style="background-color:purple"style="color:white">Sign Up</button>
       </div>
@@ -223,7 +226,7 @@ span.psw {
 
 <div id="id01" class="modal">
 
-  <form class="modal-content animate" action="/action_page.php">
+  <form class="modal-content animate" action="profile.html" target="_self">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="friendrlogo.png" alt="Friendr" class="avatar">
@@ -236,7 +239,7 @@ span.psw {
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
 
-      <button type="submit" onclick=window.location.replace("profile.hmtl")>Login</button>
+      <button type="submit">Login</button>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
