@@ -9,5 +9,5 @@ $('.add-btn').click(() => {
     $('.add-text').removeClass('out');
     $('.text').removeClass('move').html('Add Friend');
     $('.plus').removeClass('tick');
-   } , 5000);
+  }, 5000);
 });
