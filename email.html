@@ -5,6 +5,8 @@
 </h1>
 
 <head>
+  <link rel="stylesheet" href="email2.css" type="text/css">
+
 
   <link rel="stylesheet" href="email2.css" type="text/css">
   </head>
@@ -70,6 +72,7 @@
   </head>
   <body>
 
+
   <div class="topnav">
     <a href="#home" onClick="location.href='prof2.html'">Home</a>
     <a href="#about" onclick="location.href='aboutPage.html'">About</a>
@@ -84,31 +87,35 @@
 
 
 
-<p><center>Change the email address of the email field, and then click the button below.</center></p>
+<font color="purple"><p><center>Change the email address of the email field, and then click the button below.</center></p></font>
 
-E-mail: <input type="email" id="myEmail" value="johndoe@example.com" height="100"><br>
+<center>E-mail: <input type="email" id="myEmail" color="purple" value="johndoe@example.com" height="100"><br></center>
 
-<p>Note that the default value is not affected when you change the value of the email field.</p>
+<center><font color="purple"><p>Note that the default value is not affected when you change the value of the email field.</p></font></center>
 
-<button type="button" onclick="myFunction()">Enter</button>
+<center><button type="button"  onclick="myFunction()">Enter</button></center>
+
 
 <p id="demo"></p>
 
 <script>
-function myFunction() {
+
+function myFunction(color="purple") {
   var x = document.getElementById("myEmail");
   var defaultVal = x.defaultValue;
   var currentVal = x.value;
+
 
   if (defaultVal == currentVal) {
     document.getElementById("demo").innerHTML = "Default value and current value is the same: "
     + x.defaultValue + " and " + x.value
     + "<br>Change the email address of the email field to see the difference!";
   } else {
-    document.getElementById("demo").innerHTML = "The default value was: " + defaultVal
-    + "<br>The new, current value is: " + currentVal;
+    document.getElementById("demo").innerHTML = "The default value was: " + defaultVal.fontcolor("purple")
+    + "<br>The new, current value is: " + currentVal.fontcolor("purple");
   }
 }
+
 </script>
 
 </body>
