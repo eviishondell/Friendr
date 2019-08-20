@@ -1,7 +1,9 @@
+
+
 a {
   text-decoration: none;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 16px 32px;
 }
 
 a:hover {
@@ -16,7 +18,7 @@ a:hover {
 
 .next {
   background-color: purple;
-  color: white;
+  color: purple;
 }
 
 .round {
